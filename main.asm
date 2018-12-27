@@ -13,4 +13,7 @@
     .importobj "obj/relocatable.o"
 .endarea
 
+.org move_cmds + ATK_JUMPIFSUBSTITUTEBLOCKS * 4
+.word atkxx_jumpifsubstituteblocks |1
+
 .close
