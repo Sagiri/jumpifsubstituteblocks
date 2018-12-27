@@ -1,7 +1,7 @@
-.definelabel move_cmds, 0x0895F480           // mrds
+.definelabel move_cmds, 0x0895F480              // mrds
 ATK_JUMPIFSUBSTITUTEBLOCKS equ 0xFD
 
-.definelabel moveids_sound_based, 0x08250104
+.definelabel moveids_sound_based, 0x08904800    // mrds
 
 // -----------------------------------------------------------------------------
 
