@@ -24,6 +24,8 @@ Click [here](scripts/makinoa/README.md) for build instructions.
 
 The syntax in your move script is just `jumpifsubstituteblocks ptr`. It'll be stepped over and do nothing if Substitute doesn't block; it it does block, script execution will continue from `ptr`.
 
+In order to use it in BSP, you'll need to add `#command jumpifbattleover ATK_JUMPIFSUBSTITUTEBLOCKS 0x1  "Offset to possibly jump to" 0x4` to BSP's `commands.bsh`. Don't literally include `ATK_JUMPIFSUBSTITUTEBLOCKS` here; replace it with whatever value you chose.
+
 ### Credits
 
 Port of the same command in [Egg's Pokeemerald Battle Engine](https://github.com/DizzyEggg/pokeemerald/blob/battle_engine_v2/src/battle_script_commands.c#L10534).
