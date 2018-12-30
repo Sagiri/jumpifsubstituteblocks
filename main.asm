@@ -61,15 +61,15 @@
 
 // atk0C
 .org 0x0801F6E4
-.area 0xE, 0xFE
+.area 0x10, 0xFE
     ldr r0, =substitute_blocks_move_defaults |1
     bl @@call
     b 0x0801F6F4
 
-    .pool
-
     @@call:
         bx r0
+
+    .pool
 .endarea
 
 // atk5C
