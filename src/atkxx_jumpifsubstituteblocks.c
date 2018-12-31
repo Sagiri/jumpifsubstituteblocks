@@ -11,7 +11,7 @@ bool makes_sound(u16 move) {
 bool substitute_blocks_move(u8 attacker, u8 defender, u16 move) {
     if (!(battle_data[defender].status2 & STATUS2_SUBSTITUTE))
         return false;
-    else if (makes_sound(move) && SOUND_BYPASSES_SUBSTITUTE)
+    else if (SOUND_BYPASSES_SUBSTITUTE && makes_sound(move))
         return false;
     else if (battle_data[attacker].ability == ABILITY_INFILTRATOR)
         return false;
