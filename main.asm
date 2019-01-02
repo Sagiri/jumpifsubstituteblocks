@@ -60,6 +60,19 @@
     .pool
 .endarea
 
+// atk08
+.org 0x0801F380
+.area 0xE, 0xFE
+    ldr r0, =substitute_blocks_move_defaults_b_defender |1
+    bl @@call
+    b 0x0801F38E
+
+    .pool
+
+    @@call:
+        bx r0
+.endarea
+
 // atk0B
 .org 0x0801F5D0
 .area 0x10, 0xFE
@@ -97,6 +110,20 @@
         bx r0
 
     .pool
+.endarea
+
+// atk69
+.org 0x08026072
+.area 0x12, 0xFE
+    ldr r0, =substitute_blocks_move_defaults_b_defender |1
+    bl @@call
+    mov r1, r0
+    b 0x08026084
+
+    .pool
+
+    @@call:
+        bx r0
 .endarea
 
 // atkA5
