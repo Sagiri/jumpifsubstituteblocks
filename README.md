@@ -8,8 +8,6 @@ If necessary, change `move_cmds` in `constants.s`. The given address of this tab
 
 Update `ATK_JUMPIFSUBSTITUTEBLOCKS` in `constants.s`. It will need an unused move script command id.
 
-If necessary, change `moveids_sound_based` in `constants.s`. The given address of this table is for MrDollSteak's patch, so if it is there, you will not need to modify this. This is the table of moves that are sound-based (e.g. Hyper Voice and Growl).
-
 Sound-based moves only started bypassing Substitute in Gen VI. If you don't like that change, you can set `SOUND_BYPASSES_SUBSTITUTE` to `false` in `src/global.h`.
 
 Change `ABILITY_INFILTRATOR` in `src/defines/abilities.h` to match what it is in your ROM. You should set this to `0xFFFF` if you don't have Infiltrator in your ROM.

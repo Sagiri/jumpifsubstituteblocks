@@ -11,4 +11,5 @@ extern u8* b_movescr_cursor;
 
 extern u16 b_move;
 
-extern u16 moveids_sound_based[];
+extern u16* moveids_sound_based_ptr[];
+#define moveids_sound_based (*moveids_sound_based_ptr)
